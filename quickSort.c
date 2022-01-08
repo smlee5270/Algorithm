@@ -18,19 +18,19 @@ void quickSort(int *data, int start, int end){
         while(i <= j) {
 
         	while(data[i] <= data[key]){
-				i++;
-		    }
+			i++;
+		}
 
-            while(data[j] >= data[key] && start < j){
-                j--;
-            }
+           	 while(data[j] >= data[key] && start < j){
+                	j--;
+            	}
 
 
             if(i>j){
-  
-				temp = data[key];
-				data[key] = data[j];
-				data[j] = temp;
+		    
+		temp = data[key];
+		data[key] = data[j];
+		data[j] = temp;
 
             } else {
 
@@ -48,11 +48,11 @@ void quickSort(int *data, int start, int end){
 
 int main(void){
 
-        quickSort(data, 0, number-1);
+	quickSort(data, 0, number-1);
 
         for(int i=0; i<10; i++){
 
-			printf("%d",data[i]);
+		printf("%d",data[i]);
 
         }
 
