@@ -95,19 +95,19 @@ void insertAfter(Node* Current, Node* newNode){
 	
 	// not head
 		//if tail
-		if(Current->Next == NULL){
-			Current->Next = newNode;
-			newNode->Prev = Current;
-			
-		} else {
-			
-			Current->Next->Prev = newNode;
-			newNode->Prev = Current;
-			newNode->Next = Current->Next;
-			Current->Next = newNode;
-		}
+	if(Current->Next == NULL){
 		
-		
+		Current->Next = newNode;			
+		newNode->Prev = Current;
+			
+	} else {
+			
+		Current->Next->Prev = newNode;
+		newNode->Prev = Current;
+		newNode->Next = Current->Next;
+		Current->Next = newNode;
+	
+	}
 		
 		//int the middle of 2 nodes
 	
